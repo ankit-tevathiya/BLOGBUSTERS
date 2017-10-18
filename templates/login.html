@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<center>
+  <h3>LOGIN</h3>
+
+  <img src="http://www.klbs.in/img/lohinavtar.png" height="150" width="150" />
+  <img src="http://www.nbkrist.org/img_avatar2.png" height="150" width="150" />
+  <img src="http://www.slbc.lk/ta/images/services/thendral/announcers/default-avatar-rapper-guy.png" height="150" width="150"
+  />
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</center>
+<br>
+<br>
+  <form action="" method="POST">
+    <div class="form-group">
+      <label class="white-text">Username</label>
+      <input type="text" name="username" class="form-control" value={{request.form.username}}>
+    </div>
+    <div class="form-group">
+      <label class="white-text">Password</label>
+      <input type="password" name="password" class="form-control" value={{request.form.password}}>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+{% endblock %}

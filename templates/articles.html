@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<center>
+  <h4>Articles</h4></center><br>
+  <div class="row">
+    {% for article in articles %}
+    <div class="col s12 m6">
+      <div class="card blue-grey darken-1 z-depth-4">
+        <div class="card-content white-text">
+          <span class="card-title"><b>{{article.title}}</b></span><br>
+          <p>{{article.short}}</p>
+        </div>
+        <div class="card-action">
+          <a href="article/{{article.id}}">Read More</a>
+          <a href="#">Share</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+{% endblock %}
